@@ -1,0 +1,859 @@
+# Compile of SET.v failed with 2 errors.
+# Compile of testfixture.v was successful.
+# 2 compiles, 1 failed with 2 errors. 
+# Compile of SET.v failed with 1 errors.
+# Compile of testfixture.v was successful.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of SET.v was successful.
+# Compile of testfixture.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -gui -novopt work.testfixture1
+# vsim -gui -novopt work.testfixture1 
+# Refreshing C:/ic_contest/2015/work.testfixture1
+# Loading work.testfixture1
+# Refreshing C:/ic_contest/2015/work.SET
+# Loading work.SET
+# ** Warning: (vsim-PLI-3003) C:/ic_contest/2015/testfixture.v(37): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# 
+#         Region: /testfixture1
+# ** Warning: (vsim-PLI-3003) C:/ic_contest/2015/testfixture.v(38): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# 
+#         Region: /testfixture1
+run -all
+# ============================================================================
+# |                                                                          |
+# |  Please select one testbench for test !!                                 |
+# |  Simulation can't be initialized !!                                      |
+# |                                                                          |
+# ============================================================================
+# ** Note: $finish    : C:/ic_contest/2015/testfixture.v(64)
+#    Time: 1 ns  Iteration: 0  Instance: /testfixture1
+# 1
+# Break in Module testfixture1 at C:/ic_contest/2015/testfixture.v line 64
+vlog testfixture.v +define+MD1
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module testfixture1
+# 
+# Top level modules:
+# 	testfixture1
+vlog SET.v
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module SET
+# 
+# Top level modules:
+# 	SET
+vlog testfixture.v +define+MD1
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module testfixture1
+# 
+# Top level modules:
+# 	testfixture1
+vsim -gui -novopt work.testfixture1
+# vsim -gui -novopt work.testfixture1 
+# Refreshing C:/ic_contest/2015/work.testfixture1
+# Loading work.testfixture1
+# Refreshing C:/ic_contest/2015/work.SET
+# Loading work.SET
+# ** Warning: (vsim-PLI-3003) testfixture.v(37): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# 
+#         Region: /testfixture1
+# ** Warning: (vsim-PLI-3003) testfixture.v(38): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# 
+#         Region: /testfixture1
+run -all
+# --------------------------- [ Function 1. Simulation START !! ] ---------------------------
+#  Pattern           0 at Mode 0 is FAIL !. Expected candidate =  29, but the Response candidate =  65 !! 
+#  Pattern           1 at Mode 0 is FAIL !. Expected candidate =  13, but the Response candidate =  65 !! 
+#  Pattern           2 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =  66 !! 
+#  Pattern           3 at Mode 0 is FAIL !. Expected candidate =  27, but the Response candidate =  66 !! 
+#  Pattern           4 at Mode 0 is FAIL !. Expected candidate =   1, but the Response candidate =  66 !! 
+#  Pattern           5 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =  66 !! 
+#  Pattern           6 at Mode 0 is FAIL !. Expected candidate =  20, but the Response candidate =  66 !! 
+#  Pattern           7 at Mode 0 is FAIL !. Expected candidate =  15, but the Response candidate =  66 !! 
+#  Pattern           8 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =  66 !! 
+#  Pattern           9 at Mode 0 is FAIL !. Expected candidate =   9, but the Response candidate =  66 !! 
+# ============================================================================
+# 
+#  (>_<) FAIL!! The simulation FAIL result is too many ! Please check your code @@ 
+# 
+# ============================================================================
+# ** Note: $finish    : testfixture.v(140)
+#    Time: 3650 ns  Iteration: 2  Instance: /testfixture1
+# 1
+# Break in Module testfixture1 at testfixture.v line 140
+vlog testfixture.v +define+MD1
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module testfixture1
+# 
+# Top level modules:
+# 	testfixture1
+vsim -gui -novopt work.testfixture1
+# vsim -gui -novopt work.testfixture1 
+# Refreshing C:/ic_contest/2015/work.testfixture1
+# Loading work.testfixture1
+# Loading work.SET
+# ** Warning: (vsim-PLI-3003) testfixture.v(37): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# 
+#         Region: /testfixture1
+# ** Warning: (vsim-PLI-3003) testfixture.v(38): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# 
+#         Region: /testfixture1
+vlog SET.v
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module SET
+# 
+# Top level modules:
+# 	SET
+vlog testfixture.v +define+MD1
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module testfixture1
+# 
+# Top level modules:
+# 	testfixture1
+vsim -gui -novopt work.testfixture1
+# vsim -gui -novopt work.testfixture1 
+# Refreshing C:/ic_contest/2015/work.testfixture1
+# Loading work.testfixture1
+# Refreshing C:/ic_contest/2015/work.SET
+# Loading work.SET
+# ** Warning: (vsim-PLI-3003) testfixture.v(37): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# 
+#         Region: /testfixture1
+# ** Warning: (vsim-PLI-3003) testfixture.v(38): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# 
+#         Region: /testfixture1
+run -all
+# --------------------------- [ Function 1. Simulation START !! ] ---------------------------
+#  Pattern           0 at Mode 0 is FAIL !. Expected candidate =  29, but the Response candidate =  65 !! 
+#  Pattern           1 at Mode 0 is FAIL !. Expected candidate =  13, but the Response candidate =   1 !! 
+#  Pattern           2 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           3 at Mode 0 is FAIL !. Expected candidate =  27, but the Response candidate =   0 !! 
+#  Pattern           4 at Mode 0 is PASS !
+#  Pattern           5 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           6 at Mode 0 is FAIL !. Expected candidate =  20, but the Response candidate =   1 !! 
+#  Pattern           7 at Mode 0 is FAIL !. Expected candidate =  15, but the Response candidate =   0 !! 
+#  Pattern           8 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           9 at Mode 0 is FAIL !. Expected candidate =   9, but the Response candidate =   1 !! 
+#  Pattern          10 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+# ============================================================================
+# 
+#  (>_<) FAIL!! The simulation FAIL result is too many ! Please check your code @@ 
+# 
+# ============================================================================
+# ** Note: $finish    : testfixture.v(140)
+#    Time: 4 us  Iteration: 2  Instance: /testfixture1
+# 1
+# Break in Module testfixture1 at testfixture.v line 140
+add wave  \
+sim:/testfixture1/u_set/clk \
+sim:/testfixture1/u_set/rst \
+sim:/testfixture1/u_set/en \
+sim:/testfixture1/u_set/central \
+sim:/testfixture1/u_set/radius \
+sim:/testfixture1/u_set/mode \
+sim:/testfixture1/u_set/busy \
+sim:/testfixture1/u_set/valid \
+sim:/testfixture1/u_set/candidate \
+sim:/testfixture1/u_set/x1 \
+sim:/testfixture1/u_set/y1 \
+sim:/testfixture1/u_set/x2 \
+sim:/testfixture1/u_set/y2 \
+sim:/testfixture1/u_set/x3 \
+sim:/testfixture1/u_set/y3 \
+sim:/testfixture1/u_set/x \
+sim:/testfixture1/u_set/y \
+sim:/testfixture1/u_set/r1 \
+sim:/testfixture1/u_set/r2 \
+sim:/testfixture1/u_set/r3 \
+sim:/testfixture1/u_set/store_mode \
+sim:/testfixture1/u_set/state \
+sim:/testfixture1/u_set/diff_x1 \
+sim:/testfixture1/u_set/diff_x2 \
+sim:/testfixture1/u_set/diff_x3 \
+sim:/testfixture1/u_set/diff_y1 \
+sim:/testfixture1/u_set/diff_y2 \
+sim:/testfixture1/u_set/diff_y3
+restart
+# ** Warning: (vsim-PLI-3003) testfixture.v(37): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# 
+#         Region: /testfixture1
+# ** Warning: (vsim-PLI-3003) testfixture.v(38): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# 
+#         Region: /testfixture1
+run -all
+# --------------------------- [ Function 1. Simulation START !! ] ---------------------------
+#  Pattern           0 at Mode 0 is FAIL !. Expected candidate =  29, but the Response candidate =  65 !! 
+#  Pattern           1 at Mode 0 is FAIL !. Expected candidate =  13, but the Response candidate =   1 !! 
+#  Pattern           2 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           3 at Mode 0 is FAIL !. Expected candidate =  27, but the Response candidate =   0 !! 
+#  Pattern           4 at Mode 0 is PASS !
+#  Pattern           5 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           6 at Mode 0 is FAIL !. Expected candidate =  20, but the Response candidate =   1 !! 
+#  Pattern           7 at Mode 0 is FAIL !. Expected candidate =  15, but the Response candidate =   0 !! 
+#  Pattern           8 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           9 at Mode 0 is FAIL !. Expected candidate =   9, but the Response candidate =   1 !! 
+#  Pattern          10 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+# ============================================================================
+# 
+#  (>_<) FAIL!! The simulation FAIL result is too many ! Please check your code @@ 
+# 
+# ============================================================================
+# ** Note: $finish    : testfixture.v(140)
+#    Time: 4 us  Iteration: 2  Instance: /testfixture1
+# 1
+# Break in Module testfixture1 at testfixture.v line 140
+vlog SET.v
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module SET
+# 
+# Top level modules:
+# 	SET
+vlog testfixture.v +define+MD1
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module testfixture1
+# 
+# Top level modules:
+# 	testfixture1
+restart
+# Refreshing C:/ic_contest/2015/work.testfixture1
+# Loading work.testfixture1
+# Refreshing C:/ic_contest/2015/work.SET
+# Loading work.SET
+# ** Warning: (vsim-PLI-3003) testfixture.v(37): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# 
+#         Region: /testfixture1
+# ** Warning: (vsim-PLI-3003) testfixture.v(38): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# 
+#         Region: /testfixture1
+run -all
+# --------------------------- [ Function 1. Simulation START !! ] ---------------------------
+#  Pattern           0 at Mode 0 is FAIL !. Expected candidate =  29, but the Response candidate =  65 !! 
+#  Pattern           1 at Mode 0 is FAIL !. Expected candidate =  13, but the Response candidate =   1 !! 
+#  Pattern           2 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           3 at Mode 0 is FAIL !. Expected candidate =  27, but the Response candidate =   0 !! 
+#  Pattern           4 at Mode 0 is PASS !
+#  Pattern           5 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           6 at Mode 0 is FAIL !. Expected candidate =  20, but the Response candidate =   1 !! 
+#  Pattern           7 at Mode 0 is FAIL !. Expected candidate =  15, but the Response candidate =   0 !! 
+#  Pattern           8 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           9 at Mode 0 is FAIL !. Expected candidate =   9, but the Response candidate =   1 !! 
+#  Pattern          10 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+# ============================================================================
+# 
+#  (>_<) FAIL!! The simulation FAIL result is too many ! Please check your code @@ 
+# 
+# ============================================================================
+# ** Note: $finish    : testfixture.v(140)
+#    Time: 4 us  Iteration: 2  Instance: /testfixture1
+# 1
+# Break in Module testfixture1 at testfixture.v line 140
+vlog SET.v
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module SET
+# 
+# Top level modules:
+# 	SET
+vlog testfixture.v +define+MD1
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module testfixture1
+# 
+# Top level modules:
+# 	testfixture1
+restart
+# Refreshing C:/ic_contest/2015/work.testfixture1
+# Loading work.testfixture1
+# Refreshing C:/ic_contest/2015/work.SET
+# Loading work.SET
+# ** Warning: (vsim-PLI-3003) testfixture.v(37): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# 
+#         Region: /testfixture1
+# ** Warning: (vsim-PLI-3003) testfixture.v(38): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# 
+#         Region: /testfixture1
+run -all
+# --------------------------- [ Function 1. Simulation START !! ] ---------------------------
+#  Pattern           0 at Mode 0 is FAIL !. Expected candidate =  29, but the Response candidate =  65 !! 
+#  Pattern           1 at Mode 0 is FAIL !. Expected candidate =  13, but the Response candidate =   1 !! 
+#  Pattern           2 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           3 at Mode 0 is FAIL !. Expected candidate =  27, but the Response candidate =   0 !! 
+#  Pattern           4 at Mode 0 is PASS !
+#  Pattern           5 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           6 at Mode 0 is FAIL !. Expected candidate =  20, but the Response candidate =   1 !! 
+#  Pattern           7 at Mode 0 is FAIL !. Expected candidate =  15, but the Response candidate =   0 !! 
+#  Pattern           8 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           9 at Mode 0 is FAIL !. Expected candidate =   9, but the Response candidate =   1 !! 
+#  Pattern          10 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+# ============================================================================
+# 
+#  (>_<) FAIL!! The simulation FAIL result is too many ! Please check your code @@ 
+# 
+# ============================================================================
+# ** Note: $finish    : testfixture.v(140)
+#    Time: 4 us  Iteration: 2  Instance: /testfixture1
+# 1
+# Break in Module testfixture1 at testfixture.v line 140
+vlog SET.v
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module SET
+# 
+# Top level modules:
+# 	SET
+vlog testfixture.v +define+MD1
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module testfixture1
+# 
+# Top level modules:
+# 	testfixture1
+restart
+# Refreshing C:/ic_contest/2015/work.testfixture1
+# Loading work.testfixture1
+# Refreshing C:/ic_contest/2015/work.SET
+# Loading work.SET
+# ** Warning: (vsim-PLI-3003) testfixture.v(37): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# 
+#         Region: /testfixture1
+# ** Warning: (vsim-PLI-3003) testfixture.v(38): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# 
+#         Region: /testfixture1
+run -all
+# --------------------------- [ Function 1. Simulation START !! ] ---------------------------
+#  Pattern           0 at Mode 0 is FAIL !. Expected candidate =  29, but the Response candidate =  65 !! 
+#  Pattern           1 at Mode 0 is FAIL !. Expected candidate =  13, but the Response candidate =   1 !! 
+#  Pattern           2 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           3 at Mode 0 is FAIL !. Expected candidate =  27, but the Response candidate =   0 !! 
+#  Pattern           4 at Mode 0 is PASS !
+#  Pattern           5 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           6 at Mode 0 is FAIL !. Expected candidate =  20, but the Response candidate =   1 !! 
+#  Pattern           7 at Mode 0 is FAIL !. Expected candidate =  15, but the Response candidate =   0 !! 
+#  Pattern           8 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           9 at Mode 0 is FAIL !. Expected candidate =   9, but the Response candidate =   1 !! 
+#  Pattern          10 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+# ============================================================================
+# 
+#  (>_<) FAIL!! The simulation FAIL result is too many ! Please check your code @@ 
+# 
+# ============================================================================
+# ** Note: $finish    : testfixture.v(140)
+#    Time: 4 us  Iteration: 2  Instance: /testfixture1
+# 1
+# Break in Module testfixture1 at testfixture.v line 140
+add wave  \
+sim:/testfixture1/u_set/test
+restart
+# ** Warning: (vsim-PLI-3003) testfixture.v(37): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# 
+#         Region: /testfixture1
+# ** Warning: (vsim-PLI-3003) testfixture.v(38): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# 
+#         Region: /testfixture1
+run -all
+# --------------------------- [ Function 1. Simulation START !! ] ---------------------------
+#  Pattern           0 at Mode 0 is FAIL !. Expected candidate =  29, but the Response candidate =  65 !! 
+#  Pattern           1 at Mode 0 is FAIL !. Expected candidate =  13, but the Response candidate =   1 !! 
+#  Pattern           2 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           3 at Mode 0 is FAIL !. Expected candidate =  27, but the Response candidate =   0 !! 
+#  Pattern           4 at Mode 0 is PASS !
+#  Pattern           5 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           6 at Mode 0 is FAIL !. Expected candidate =  20, but the Response candidate =   1 !! 
+#  Pattern           7 at Mode 0 is FAIL !. Expected candidate =  15, but the Response candidate =   0 !! 
+#  Pattern           8 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           9 at Mode 0 is FAIL !. Expected candidate =   9, but the Response candidate =   1 !! 
+#  Pattern          10 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+# ============================================================================
+# 
+#  (>_<) FAIL!! The simulation FAIL result is too many ! Please check your code @@ 
+# 
+# ============================================================================
+# ** Note: $finish    : testfixture.v(140)
+#    Time: 4 us  Iteration: 2  Instance: /testfixture1
+# 1
+# Break in Module testfixture1 at testfixture.v line 140
+vlog SET.v
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module SET
+# 
+# Top level modules:
+# 	SET
+vlog testfixture.v +define+MD1
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module testfixture1
+# 
+# Top level modules:
+# 	testfixture1
+restart
+# Refreshing C:/ic_contest/2015/work.testfixture1
+# Loading work.testfixture1
+# Refreshing C:/ic_contest/2015/work.SET
+# Loading work.SET
+# ** Warning: (vsim-PLI-3003) testfixture.v(37): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# 
+#         Region: /testfixture1
+# ** Warning: (vsim-PLI-3003) testfixture.v(38): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# 
+#         Region: /testfixture1
+run -all
+# --------------------------- [ Function 1. Simulation START !! ] ---------------------------
+#  Pattern           0 at Mode 0 is PASS !
+#  Pattern           1 at Mode 0 is FAIL !. Expected candidate =  13, but the Response candidate =   0 !! 
+#  Pattern           2 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           3 at Mode 0 is FAIL !. Expected candidate =  27, but the Response candidate =   0 !! 
+#  Pattern           4 at Mode 0 is FAIL !. Expected candidate =   1, but the Response candidate =   0 !! 
+#  Pattern           5 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           6 at Mode 0 is FAIL !. Expected candidate =  20, but the Response candidate =   0 !! 
+#  Pattern           7 at Mode 0 is FAIL !. Expected candidate =  15, but the Response candidate =   1 !! 
+#  Pattern           8 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+#  Pattern           9 at Mode 0 is FAIL !. Expected candidate =   9, but the Response candidate =   0 !! 
+#  Pattern          10 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =   0 !! 
+# ============================================================================
+# 
+#  (>_<) FAIL!! The simulation FAIL result is too many ! Please check your code @@ 
+# 
+# ============================================================================
+# ** Note: $finish    : testfixture.v(140)
+#    Time: 4 us  Iteration: 2  Instance: /testfixture1
+# 1
+# Break in Module testfixture1 at testfixture.v line 140
+vlog SET.v
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module SET
+# 
+# Top level modules:
+# 	SET
+vlog testfixture.v +define+MD1
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module testfixture1
+# 
+# Top level modules:
+# 	testfixture1
+restart
+# Refreshing C:/ic_contest/2015/work.testfixture1
+# Loading work.testfixture1
+# Refreshing C:/ic_contest/2015/work.SET
+# Loading work.SET
+# ** Warning: (vsim-PLI-3003) testfixture.v(37): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# 
+#         Region: /testfixture1
+# ** Warning: (vsim-PLI-3003) testfixture.v(38): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# 
+#         Region: /testfixture1
+run -all
+# --------------------------- [ Function 1. Simulation START !! ] ---------------------------
+#  Pattern           0 at Mode 0 is PASS !
+#  Pattern           1 at Mode 0 is PASS !
+#  Pattern           2 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =  13 !! 
+#  Pattern           3 at Mode 0 is FAIL !. Expected candidate =  27, but the Response candidate =  28 !! 
+#  Pattern           4 at Mode 0 is FAIL !. Expected candidate =   1, but the Response candidate =   3 !! 
+#  Pattern           5 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =  13 !! 
+#  Pattern           6 at Mode 0 is PASS !
+#  Pattern           7 at Mode 0 is FAIL !. Expected candidate =  15, but the Response candidate =  25 !! 
+#  Pattern           8 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =  13 !! 
+#  Pattern           9 at Mode 0 is FAIL !. Expected candidate =   9, but the Response candidate =  12 !! 
+#  Pattern          10 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =  13 !! 
+#  Pattern          11 at Mode 0 is FAIL !. Expected candidate =   1, but the Response candidate =   3 !! 
+#  Pattern          12 at Mode 0 is FAIL !. Expected candidate =   4, but the Response candidate =   9 !! 
+# ============================================================================
+# 
+#  (>_<) FAIL!! The simulation FAIL result is too many ! Please check your code @@ 
+# 
+# ============================================================================
+# ** Note: $finish    : testfixture.v(140)
+#    Time: 42540 ns  Iteration: 2  Instance: /testfixture1
+# 1
+# Break in Module testfixture1 at testfixture.v line 140
+vlog SET.v
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module SET
+# 
+# Top level modules:
+# 	SET
+vlog testfixture.v +define+MD1
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module testfixture1
+# 
+# Top level modules:
+# 	testfixture1
+restart
+# Refreshing C:/ic_contest/2015/work.testfixture1
+# Loading work.testfixture1
+# Refreshing C:/ic_contest/2015/work.SET
+# Loading work.SET
+# ** Warning: (vsim-PLI-3003) testfixture.v(37): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# 
+#         Region: /testfixture1
+# ** Warning: (vsim-PLI-3003) testfixture.v(38): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# 
+#         Region: /testfixture1
+run -all
+# --------------------------- [ Function 1. Simulation START !! ] ---------------------------
+#  Pattern           0 at Mode 0 is PASS !
+#  Pattern           1 at Mode 0 is PASS !
+#  Pattern           2 at Mode 0 is PASS !
+#  Pattern           3 at Mode 0 is PASS !
+#  Pattern           4 at Mode 0 is PASS !
+#  Pattern           5 at Mode 0 is PASS !
+#  Pattern           6 at Mode 0 is PASS !
+#  Pattern           7 at Mode 0 is PASS !
+#  Pattern           8 at Mode 0 is PASS !
+#  Pattern           9 at Mode 0 is PASS !
+#  Pattern          10 at Mode 0 is PASS !
+#  Pattern          11 at Mode 0 is PASS !
+#  Pattern          12 at Mode 0 is PASS !
+#  Pattern          13 at Mode 0 is PASS !
+#  Pattern          14 at Mode 0 is PASS !
+#  Pattern          15 at Mode 0 is PASS !
+#  Pattern          16 at Mode 0 is PASS !
+#  Pattern          17 at Mode 0 is PASS !
+#  Pattern          18 at Mode 0 is PASS !
+#  Pattern          19 at Mode 0 is PASS !
+#  Pattern          20 at Mode 0 is PASS !
+#  Pattern          21 at Mode 0 is PASS !
+#  Pattern          22 at Mode 0 is PASS !
+#  Pattern          23 at Mode 0 is PASS !
+#  Pattern          24 at Mode 0 is PASS !
+#  Pattern          25 at Mode 0 is PASS !
+#  Pattern          26 at Mode 0 is PASS !
+#  Pattern          27 at Mode 0 is PASS !
+#  Pattern          28 at Mode 0 is PASS !
+#  Pattern          29 at Mode 0 is PASS !
+#  Pattern          30 at Mode 0 is PASS !
+#  Pattern          31 at Mode 0 is PASS !
+#  Pattern          32 at Mode 0 is PASS !
+#  Pattern          33 at Mode 0 is PASS !
+#  Pattern          34 at Mode 0 is PASS !
+#  Pattern          35 at Mode 0 is PASS !
+#  Pattern          36 at Mode 0 is PASS !
+#  Pattern          37 at Mode 0 is PASS !
+#  Pattern          38 at Mode 0 is PASS !
+#  Pattern          39 at Mode 0 is PASS !
+#  Pattern          40 at Mode 0 is PASS !
+#  Pattern          41 at Mode 0 is PASS !
+#  Pattern          42 at Mode 0 is PASS !
+#  Pattern          43 at Mode 0 is PASS !
+#  Pattern          44 at Mode 0 is PASS !
+#  Pattern          45 at Mode 0 is PASS !
+#  Pattern          46 at Mode 0 is PASS !
+#  Pattern          47 at Mode 0 is PASS !
+#  Pattern          48 at Mode 0 is PASS !
+#  Pattern          49 at Mode 0 is PASS !
+#  Pattern          50 at Mode 0 is PASS !
+#  Pattern          51 at Mode 0 is PASS !
+#  Pattern          52 at Mode 0 is PASS !
+#  Pattern          53 at Mode 0 is PASS !
+#  Pattern          54 at Mode 0 is PASS !
+#  Pattern          55 at Mode 0 is PASS !
+#  Pattern          56 at Mode 0 is PASS !
+#  Pattern          57 at Mode 0 is PASS !
+#  Pattern          58 at Mode 0 is PASS !
+#  Pattern          59 at Mode 0 is PASS !
+#  Pattern          60 at Mode 0 is PASS !
+#  Pattern          61 at Mode 0 is PASS !
+#  Pattern          62 at Mode 0 is PASS !
+#  Pattern          63 at Mode 0 is PASS !
+# --------------------------- Simulation FINISH !!---------------------------
+# ============================================================================
+# 
+#  \(^o^)/ CONGRATULATIONS!!  The simulation result is PASS!!!
+# 
+# ============================================================================
+# ** Note: $finish    : testfixture.v(131)
+#    Time: 165810 ns  Iteration: 0  Instance: /testfixture1
+# 1
+# Break in Module testfixture1 at testfixture.v line 131
+vlog SET.v
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module SET
+# 
+# Top level modules:
+# 	SET
+vlog testfixture.v +define+MD2
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module testfixture1
+# 
+# Top level modules:
+# 	testfixture1
+restart
+# Refreshing C:/ic_contest/2015/work.testfixture1
+# Loading work.testfixture1
+# Refreshing C:/ic_contest/2015/work.SET
+# Loading work.SET
+# ** Warning: (vsim-PLI-3003) testfixture.v(37): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# 
+#         Region: /testfixture1
+# ** Warning: (vsim-PLI-3003) testfixture.v(38): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# 
+#         Region: /testfixture1
+# Warning in wave window restart: (vish-4014) No objects found matching '/testfixture1/u_set/test'. 
+run -all
+# --------------------------- [ Function 2. Simulation START !! ] ---------------------------
+#  Pattern           0 at Mode 1 is PASS !
+#  Pattern           1 at Mode 1 is PASS !
+#  Pattern           2 at Mode 1 is PASS !
+#  Pattern           3 at Mode 1 is PASS !
+#  Pattern           4 at Mode 1 is PASS !
+#  Pattern           5 at Mode 1 is PASS !
+#  Pattern           6 at Mode 1 is PASS !
+#  Pattern           7 at Mode 1 is PASS !
+#  Pattern           8 at Mode 1 is PASS !
+#  Pattern           9 at Mode 1 is PASS !
+#  Pattern          10 at Mode 1 is PASS !
+#  Pattern          11 at Mode 1 is PASS !
+#  Pattern          12 at Mode 1 is PASS !
+#  Pattern          13 at Mode 1 is PASS !
+#  Pattern          14 at Mode 1 is PASS !
+#  Pattern          15 at Mode 1 is PASS !
+#  Pattern          16 at Mode 1 is PASS !
+#  Pattern          17 at Mode 1 is PASS !
+#  Pattern          18 at Mode 1 is PASS !
+#  Pattern          19 at Mode 1 is PASS !
+#  Pattern          20 at Mode 1 is PASS !
+#  Pattern          21 at Mode 1 is PASS !
+#  Pattern          22 at Mode 1 is PASS !
+#  Pattern          23 at Mode 1 is PASS !
+#  Pattern          24 at Mode 1 is PASS !
+#  Pattern          25 at Mode 1 is PASS !
+#  Pattern          26 at Mode 1 is PASS !
+#  Pattern          27 at Mode 1 is PASS !
+#  Pattern          28 at Mode 1 is PASS !
+#  Pattern          29 at Mode 1 is PASS !
+#  Pattern          30 at Mode 1 is PASS !
+#  Pattern          31 at Mode 1 is PASS !
+#  Pattern          32 at Mode 1 is PASS !
+#  Pattern          33 at Mode 1 is PASS !
+#  Pattern          34 at Mode 1 is PASS !
+#  Pattern          35 at Mode 1 is PASS !
+#  Pattern          36 at Mode 1 is PASS !
+#  Pattern          37 at Mode 1 is PASS !
+#  Pattern          38 at Mode 1 is PASS !
+#  Pattern          39 at Mode 1 is PASS !
+#  Pattern          40 at Mode 1 is PASS !
+#  Pattern          41 at Mode 1 is PASS !
+#  Pattern          42 at Mode 1 is PASS !
+#  Pattern          43 at Mode 1 is PASS !
+#  Pattern          44 at Mode 1 is PASS !
+#  Pattern          45 at Mode 1 is PASS !
+#  Pattern          46 at Mode 1 is PASS !
+#  Pattern          47 at Mode 1 is PASS !
+#  Pattern          48 at Mode 1 is PASS !
+#  Pattern          49 at Mode 1 is PASS !
+#  Pattern          50 at Mode 1 is PASS !
+#  Pattern          51 at Mode 1 is PASS !
+#  Pattern          52 at Mode 1 is PASS !
+#  Pattern          53 at Mode 1 is PASS !
+#  Pattern          54 at Mode 1 is PASS !
+#  Pattern          55 at Mode 1 is PASS !
+#  Pattern          56 at Mode 1 is PASS !
+#  Pattern          57 at Mode 1 is PASS !
+#  Pattern          58 at Mode 1 is PASS !
+#  Pattern          59 at Mode 1 is PASS !
+#  Pattern          60 at Mode 1 is PASS !
+#  Pattern          61 at Mode 1 is PASS !
+#  Pattern          62 at Mode 1 is PASS !
+#  Pattern          63 at Mode 1 is PASS !
+# --------------------------- Simulation FINISH !!---------------------------
+# ============================================================================
+# 
+#  \(^o^)/ CONGRATULATIONS!!  The simulation result is PASS!!!
+# 
+# ============================================================================
+# ** Note: $finish    : testfixture.v(131)
+#    Time: 165810 ns  Iteration: 0  Instance: /testfixture1
+# 1
+# Break in Module testfixture1 at testfixture.v line 131
+vlog SET.v
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module SET
+# 
+# Top level modules:
+# 	SET
+vlog testfixture.v +define+MD3
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module testfixture1
+# 
+# Top level modules:
+# 	testfixture1
+restart
+# Refreshing C:/ic_contest/2015/work.testfixture1
+# Loading work.testfixture1
+# Refreshing C:/ic_contest/2015/work.SET
+# Loading work.SET
+# ** Warning: (vsim-PLI-3003) testfixture.v(37): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# 
+#         Region: /testfixture1
+# ** Warning: (vsim-PLI-3003) testfixture.v(38): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# 
+#         Region: /testfixture1
+run -all
+# --------------------------- [ Function 3. Simulation START !! ] ---------------------------
+#  Pattern           0 at Mode 2 is PASS !
+#  Pattern           1 at Mode 2 is PASS !
+#  Pattern           2 at Mode 2 is PASS !
+#  Pattern           3 at Mode 2 is PASS !
+#  Pattern           4 at Mode 2 is PASS !
+#  Pattern           5 at Mode 2 is PASS !
+#  Pattern           6 at Mode 2 is PASS !
+#  Pattern           7 at Mode 2 is PASS !
+#  Pattern           8 at Mode 2 is PASS !
+#  Pattern           9 at Mode 2 is PASS !
+#  Pattern          10 at Mode 2 is PASS !
+#  Pattern          11 at Mode 2 is PASS !
+#  Pattern          12 at Mode 2 is PASS !
+#  Pattern          13 at Mode 2 is PASS !
+#  Pattern          14 at Mode 2 is PASS !
+#  Pattern          15 at Mode 2 is PASS !
+#  Pattern          16 at Mode 2 is PASS !
+#  Pattern          17 at Mode 2 is PASS !
+#  Pattern          18 at Mode 2 is PASS !
+#  Pattern          19 at Mode 2 is PASS !
+#  Pattern          20 at Mode 2 is PASS !
+#  Pattern          21 at Mode 2 is PASS !
+#  Pattern          22 at Mode 2 is PASS !
+#  Pattern          23 at Mode 2 is PASS !
+#  Pattern          24 at Mode 2 is PASS !
+#  Pattern          25 at Mode 2 is PASS !
+#  Pattern          26 at Mode 2 is PASS !
+#  Pattern          27 at Mode 2 is PASS !
+#  Pattern          28 at Mode 2 is PASS !
+#  Pattern          29 at Mode 2 is PASS !
+#  Pattern          30 at Mode 2 is PASS !
+#  Pattern          31 at Mode 2 is PASS !
+#  Pattern          32 at Mode 2 is PASS !
+#  Pattern          33 at Mode 2 is PASS !
+#  Pattern          34 at Mode 2 is PASS !
+#  Pattern          35 at Mode 2 is PASS !
+#  Pattern          36 at Mode 2 is PASS !
+#  Pattern          37 at Mode 2 is PASS !
+#  Pattern          38 at Mode 2 is PASS !
+#  Pattern          39 at Mode 2 is PASS !
+#  Pattern          40 at Mode 2 is PASS !
+#  Pattern          41 at Mode 2 is PASS !
+#  Pattern          42 at Mode 2 is PASS !
+#  Pattern          43 at Mode 2 is PASS !
+#  Pattern          44 at Mode 2 is PASS !
+#  Pattern          45 at Mode 2 is PASS !
+#  Pattern          46 at Mode 2 is PASS !
+#  Pattern          47 at Mode 2 is PASS !
+#  Pattern          48 at Mode 2 is PASS !
+#  Pattern          49 at Mode 2 is PASS !
+#  Pattern          50 at Mode 2 is PASS !
+#  Pattern          51 at Mode 2 is PASS !
+#  Pattern          52 at Mode 2 is PASS !
+#  Pattern          53 at Mode 2 is PASS !
+#  Pattern          54 at Mode 2 is PASS !
+#  Pattern          55 at Mode 2 is PASS !
+#  Pattern          56 at Mode 2 is PASS !
+#  Pattern          57 at Mode 2 is PASS !
+#  Pattern          58 at Mode 2 is PASS !
+#  Pattern          59 at Mode 2 is PASS !
+#  Pattern          60 at Mode 2 is PASS !
+#  Pattern          61 at Mode 2 is PASS !
+#  Pattern          62 at Mode 2 is PASS !
+#  Pattern          63 at Mode 2 is PASS !
+# --------------------------- Simulation FINISH !!---------------------------
+# ============================================================================
+# 
+#  \(^o^)/ CONGRATULATIONS!!  The simulation result is PASS!!!
+# 
+# ============================================================================
+# ** Note: $finish    : testfixture.v(131)
+#    Time: 165810 ns  Iteration: 0  Instance: /testfixture1
+# 1
+# Break in Module testfixture1 at testfixture.v line 131
+vlog SET.v
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module SET
+# 
+# Top level modules:
+# 	SET
+vlog testfixture.v +define+MD4
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module testfixture1
+# 
+# Top level modules:
+# 	testfixture1
+restart
+# Refreshing C:/ic_contest/2015/work.testfixture1
+# Loading work.testfixture1
+# Refreshing C:/ic_contest/2015/work.SET
+# Loading work.SET
+# ** Warning: (vsim-PLI-3003) testfixture.v(37): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# 
+#         Region: /testfixture1
+# ** Warning: (vsim-PLI-3003) testfixture.v(38): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# 
+#         Region: /testfixture1
+run -all
+# --------------------------- [ Function 4. Simulation START !! ] ---------------------------
+#  Pattern           0 at Mode 3 is PASS !
+#  Pattern           1 at Mode 3 is PASS !
+#  Pattern           2 at Mode 3 is PASS !
+#  Pattern           3 at Mode 3 is PASS !
+#  Pattern           4 at Mode 3 is PASS !
+#  Pattern           5 at Mode 3 is PASS !
+#  Pattern           6 at Mode 3 is PASS !
+#  Pattern           7 at Mode 3 is PASS !
+#  Pattern           8 at Mode 3 is PASS !
+#  Pattern           9 at Mode 3 is PASS !
+#  Pattern          10 at Mode 3 is PASS !
+#  Pattern          11 at Mode 3 is PASS !
+#  Pattern          12 at Mode 3 is PASS !
+#  Pattern          13 at Mode 3 is PASS !
+#  Pattern          14 at Mode 3 is PASS !
+#  Pattern          15 at Mode 3 is PASS !
+#  Pattern          16 at Mode 3 is PASS !
+#  Pattern          17 at Mode 3 is PASS !
+#  Pattern          18 at Mode 3 is PASS !
+#  Pattern          19 at Mode 3 is PASS !
+#  Pattern          20 at Mode 3 is PASS !
+#  Pattern          21 at Mode 3 is PASS !
+#  Pattern          22 at Mode 3 is PASS !
+#  Pattern          23 at Mode 3 is PASS !
+#  Pattern          24 at Mode 3 is PASS !
+#  Pattern          25 at Mode 3 is PASS !
+#  Pattern          26 at Mode 3 is PASS !
+#  Pattern          27 at Mode 3 is PASS !
+#  Pattern          28 at Mode 3 is PASS !
+#  Pattern          29 at Mode 3 is PASS !
+#  Pattern          30 at Mode 3 is PASS !
+#  Pattern          31 at Mode 3 is PASS !
+#  Pattern          32 at Mode 3 is PASS !
+#  Pattern          33 at Mode 3 is PASS !
+#  Pattern          34 at Mode 3 is PASS !
+#  Pattern          35 at Mode 3 is PASS !
+#  Pattern          36 at Mode 3 is PASS !
+#  Pattern          37 at Mode 3 is PASS !
+#  Pattern          38 at Mode 3 is PASS !
+#  Pattern          39 at Mode 3 is PASS !
+#  Pattern          40 at Mode 3 is PASS !
+#  Pattern          41 at Mode 3 is PASS !
+#  Pattern          42 at Mode 3 is PASS !
+#  Pattern          43 at Mode 3 is PASS !
+#  Pattern          44 at Mode 3 is PASS !
+#  Pattern          45 at Mode 3 is PASS !
+#  Pattern          46 at Mode 3 is PASS !
+#  Pattern          47 at Mode 3 is PASS !
+#  Pattern          48 at Mode 3 is PASS !
+#  Pattern          49 at Mode 3 is PASS !
+#  Pattern          50 at Mode 3 is PASS !
+#  Pattern          51 at Mode 3 is PASS !
+#  Pattern          52 at Mode 3 is PASS !
+#  Pattern          53 at Mode 3 is PASS !
+#  Pattern          54 at Mode 3 is PASS !
+#  Pattern          55 at Mode 3 is PASS !
+#  Pattern          56 at Mode 3 is PASS !
+#  Pattern          57 at Mode 3 is PASS !
+#  Pattern          58 at Mode 3 is PASS !
+#  Pattern          59 at Mode 3 is PASS !
+#  Pattern          60 at Mode 3 is PASS !
+#  Pattern          61 at Mode 3 is PASS !
+#  Pattern          62 at Mode 3 is PASS !
+#  Pattern          63 at Mode 3 is PASS !
+# --------------------------- Simulation FINISH !!---------------------------
+# ============================================================================
+# 
+#  \(^o^)/ CONGRATULATIONS!!  The simulation result is PASS!!!
+# 
+# ============================================================================
+# ** Note: $finish    : testfixture.v(131)
+#    Time: 165810 ns  Iteration: 0  Instance: /testfixture1
+# 1
+# Break in Module testfixture1 at testfixture.v line 131
